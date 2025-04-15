@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eeebe5;
+}
+
+nav{
+    border-bottom: 1px solid #686765;
+    padding-block: 1rem;
+}
+
+.genLayout{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.innerNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.innerNav{
+    color: #5d0ffd;
+    text-transform: capitalize;
+    font-size: 18px;
+    font: 1em sans-serif;
+}
+
+.navigationItems{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.navigationItems > a{
+    text-decoration: none;
+    text-transform:capitalize ;
+    color: #686765;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.navigationItems > a:nth-child(4){
+    background-color:#f5f3f0 ;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.navigationItems > button{
+    border: none;
+    background-color: #5700fb;
+    color: #fff;
+    padding: 8px 17px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.navigationItems > button > span{
+    margin-right: 0.3rem;
+}
+
+/* styling for mail */
+.badge{
+    background-color: #fff;
+    margin-block: 2.7rem;
+    border-radius: 7px;
+    padding-block: 2rem;
+    text-align: center;
+}
+
+.badge > span{
+    background-color: #6a1eff;
+    border-radius: 5px;
+    color: #fff;
+    width: 30px;
+    margin: 1.5rem auto;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge > h1{
+    font-size: 2rem;
+    font: 2em sans-serif;
+}
+ 
+.badge > p {
+    font-size: 14px;
+    font: 0.8em sans-serif;
+    margin-block: .7rem;
+    color: #686765;
+} 
+
+.badgeInfo{
+    max-width: 450px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font: 0.8em sans-serif;
+    color:#686765;
+}
+
+.badgeInfo > span{
+    border: 1px solid #f4f2ef;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.badgeInfo > span > i{
+    color: #5700fb;
+    margin-right: 0.5rem;
+}
+
+/* styling for contact */
+.contactWrapper{
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+ 
+.contactInfo{
+    width: 35%;
+}
+
+.contactInfoCard{
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.contactInfoText > p{
+    font-size: 13px;
+    opacity: 0.7;
+    font: 0.7em sans-serif;
+}
+
+.contactInfoText > h1{
+    font-size: 14px;
+    margin-top: 5px;
+    font: 0.8em sans-serif;
+}
+
+.contactInfoCard > span{
+    border: 2px solid  #eeebe5;
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactInfo > h3{
+    font-size: 14px;
+    margin-top: 5px;
+    font: 0.8em sans-serif;
+    opacity: 0.8;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 140px;
+    padding: .7rem;
+    gap: 10px;
+    border-radius: 5px;
+    margin-top: .5rem;
+}
+
+.socialIcons > a{
+    background-color: #6a1eff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.formWrapper{
+    /* border: 2px solid red; */
+    flex: 1;
+    background-color: #fff;
+    border-radius: 7px;
+    padding:3rem 2.8rem ;
+}
+
+.inputWrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.inputWrapper > input{
+    background-color: #eeebe5;
+    padding: 0.8rem 1.5rem;
+    flex: 1;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    border: 2px solid #ece8ec;
+    outline: none;
+}
+
+.inputWrapper > input::placeholder{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.contactOptions{
+    background-color:#eeebe5;
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+    border: 2px solid #ece8e2;
+}
+
+.contactOptions > p{
+    margin-bottom: 1.5rem;
+    font: 0.8em sans-serif;
+}
+
+.optionWrapper{
+    display: grid;
+    gap: 10px;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2,1fr);
+}
+
+.innerOptionWrapper{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.innerOptionWrapper > label{
+    text-transform: capitalize;
+    font-weight: 500;
+    font: 0.7em sans-serif;
+    opacity: 0.7;
+}
+
+/* .innerOptionWrapper > input[type="checkbox"]{
+    padding: 1rem;
+} */
+
+form > input{
+    background-color: #eeebe5;
+    width: 100%;
+    padding: 2rem 1.7rem 6rem;
+    margin-block: 2rem;
+    border: 2px solid #ece8e2;
+    outline: none;
+    border-radius: 7px;
+}
+
+form > input::placeholder{
+    text-transform: capitalize;
+}
+
+form > button{
+    background-color: #5700fb;
+    display: block;
+    margin: auto;
+    color: #fff;
+    padding: 1rem 1.7rem;
+    border: none;
+    border-radius: 7px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.ending{
+    /* border: 2px solid; */
+    margin-block: 2.7rem;
+    border-radius: 7px;
+    padding-block: 2rem;
+    text-align: center;
+}
+
+.ending > h1{
+    font-size: 2rem;
+    font: 2em sans-serif;
+}
+ 
+.ending > p {
+    font-size: 14px;
+    margin-block: .7rem;
+    color: #686765;
+    font: 0.8em sans-serif;
+} 
+
+/* styling for faq */
+.faq{
+    /* border: 2px solid; */
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+.faqInfo{
+    /* border: 2px solid; */
+    border-radius: 7px;
+    width: 150%;
+    background-color: #fff;
+}
+
+.faqInfoCard{
+    /* border: 2px solid; */
+    border-radius: 7px;
+    background-color: #eeebe5;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-block: 1rem;
+    
+}
+
+.faqInfoText > p{
+    font-size: 13px;
+    opacity: 0.7;
+    font: 0.7em sans-serif; 
+}
+
+.faqInfoText > h2{
+    font-size: 15px;
+    margin-block: 8px;
+    font: 0.9em sans-serif;
+    opacity: 0.8;
+}
+
+.faqInfoText > h1{
+    font-size: 15px;
+    margin-block: 7px;
+    font: 0.9em sans-serif;
+    opacity: 0.8;  
+}
+
+.faqInfoCard > span{
+    border: 2px solid rgb(231 227 219);
+    border-radius: 7px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faqInfoCard > span1{
+    border: 2px solid rgb(231 227 219);
+    border-radius: 7px;
+    margin: 0.7rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqInfo2{
+    /* border: 2px solid; */
+    border-radius: 7px;
+    background-color: #fff;
+    padding: 1rem;  
+}
+
+.faqInfo2 > span{
+    background-color: #6a1eff;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faqInfo2 > h1{
+    font-size: 15px;
+    margin-block: 7px;
+    font: 1.1em sans-serif;
+    margin-bottom: 1rem;
+}
+
+.faqInfo2 > p{
+    font-size: 13px;
+    opacity: 0.7;
+    font: 0.7em sans-serif; 
+    margin-bottom: 1rem;
+}
+
+.faqInfo2 > button{
+    background-color: #5700fb;
+    display: block;
+    color: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem 1.7rem;
+    border: none;
+    border-radius: 7px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+/* footer styling */
+footer{
+    border-top: 1px solid #686765;
+    margin-block: 5rem;
+    padding-block: 2rem;
+}
+
+/* .genLayout{
+    max-width: 1000px;
+    margin: auto;
+} */
+
+.innerFooter{
+    /* border: 2px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #5d0ffd;
+    text-transform: capitalize;
+    font-size: 18px;
+    font: 1em sans-serif;
+}
+
+.footerItems{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.footerItems > a{
+    text-decoration: none;
+    text-transform:capitalize ;
+    color: #686765;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footerIcons{
+    display: flex;
+    justify-content: center;
+    width: 140px;
+    padding: .7rem;
+    gap: 10px;
+    border-radius: 5px;
+    margin-top: .5rem;
+}
+
+.footerIcons > a{
+    background-color: #6a1eff;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.footerContactInfo{
+    /* border: 2px solid gold; */
+    font: 1em sans-serif;
+    color:#686765;
+}
+
+.footContactInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footContactInfo1{
+border: 0.5px solid rgb(231 226 218);
+display: flex;
+}
+
+.footContactInfo1 > span{
+    /* border: 2px solid; */
+    margin-block: 10px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footContactInfo1 > span >i{
+    color: #6a1eff;
+    margin-left: 10px;
+}
+
+.footContactInfo1 > span > h6{
+    margin-right: 10px;
+}
+
+.footContactInfo2{
+    border: 0.5px solid rgb(231 226 218);
+    display: flex;
+}
+
+ .footContactInfo2 > span{
+    /* border: 2px solid; */
+    margin-block: 10px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+ }
+ 
+.footContactInfo2 > span >i{
+    color: #6a1eff;
+    margin-left: 10px;
+}
+
+.footContactInfo2 > span > h6{
+    margin-right: 10px;
+}
+
+.footContactInfo3{
+    border: 0.5px solid rgb(231 226 218);
+    display: flex;
+}
+
+.footContactInfo3 > span{
+    /* border: 2px solid; */
+    margin-block: 10px;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.footContactInfo3 > span >i{
+    color: #6a1eff;
+    margin-left: 10px;
+}
+
+.footContactInfo3 > span > h6{
+    margin-right: 10px;
+}
+
+.ending2{
+    /* border: 2px solid;  */
+    text-align: center; 
+    margin-block: 1rem;  
+}
+
+.endingg > p{
+    font-size: 14px;
+    margin-block: .7rem;
+    color: rgb(150 149 148);
+    font: 0.7em sans-serif;
+}
